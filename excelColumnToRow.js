@@ -36,9 +36,8 @@ Output: 701
     
     }
 
-aa = 26 * 1 + 1
-bb = 26 *2 + 2
-zz = 26 * 26 + 26
+solution:
+just like decimal system is based on base 10, this is based on base 26
 
 */
 
@@ -70,6 +69,7 @@ const alphabets = {
   'y' : 25,
   'z' : 26
 }
+
 
 function getExcelColumnNumber(dat) {
   let out = 0; 
