@@ -33,7 +33,7 @@ Constraints:
 */
 
 
-console.log(findMaxAmountRobbed([1,9,1,1,9,1,1,9]));
+console.log(findMaxAmountRobbed([2,1,1,2]));
 
 
 function findMaxAmountRobbed(nums) {
@@ -50,7 +50,7 @@ function findMaxAmountRobbed(nums) {
     }
 
     sum[0] = nums[0];
-    sum[1] = nums[1];
+    sum[1] = Math.max(nums[1], nums[0]);
 
     for(let i=2; i<nums.length; i++) {
         sum[i] = Math.max(nums[i] + sum[i-2], sum[i-1]);
