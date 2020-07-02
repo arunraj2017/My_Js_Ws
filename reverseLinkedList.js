@@ -33,9 +33,22 @@ function makeReverseRec(node) {
 
 }
 
-function printReverseIter(node) {
-
-}
+function reverseLLIter(head) {
+    if (head == null) {
+      return null;
+    }
+    let prev = null;
+    let current = head;
+    while(current != null) {
+        const temp = current.next;
+        current.next = prev;
+        prev = current;
+        current = temp; 
+    }
+    head = prev;
+     return head;
+   
+  }
 
 function printLinkedList(node) {
 
