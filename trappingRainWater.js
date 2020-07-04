@@ -1,5 +1,12 @@
 /*
 https://www.youtube.com/watch?v=fTD6Se3ZtEo&feature=youtu.be
+
+
+solution:
+save maxesfrom left to right
+save maxes from right to left
+save mins from both above 
+subtract above from nums[i];
 */
 function countTotalWater(nums) {
     if (nums == null && nums.length < 3) {
@@ -10,6 +17,7 @@ function countTotalWater(nums) {
   let max_right = [];
   max_left[0] = nums[0];
   max_right[nums.length-1] = nums[nums.length-1];
+
     //find left maxs
     for (let i = 1; i < nums.length; i++) {
         max_left[i] = Math.max(max_left[i-1], nums[i]);
