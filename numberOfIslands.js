@@ -78,4 +78,4 @@ let nms3 = [
 [0,0,0,1,1]
 ];
 
-console.log(getNumberOfIslands(nms3))
+console.log(getNumberOfIslands(nms1))
