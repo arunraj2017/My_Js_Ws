@@ -1,32 +1,26 @@
+/*[[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]]
 
+[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]
 
-console.log(mergeSortedArrays([0, 3, 4, 31], [3, 4, 6, 30]));
+*/
 
-
-function mergeSortedArrays(ar1, ar2) {
-    let i = 0, j = 0, result = [];
-    while (true) {
-        if (ar1[i] == undefined && ar1[j] == undefined) {
-            return result;
-        } else if (ar1[i] == undefined) {
-            result.push(ar2[j]);
-            ++j;
-        } else if (ar2[j] == undefined) {
-            result.push(ar1[i]);
-            ++i;
-        } else if(ar1[i] == ar2[j]) {
-            result.push(ar1[i]);
-            ++i;
-            ++j;
-        } 
-        else if (ar1[i] < ar2[j]) {
-            result.push(ar1[i]);
-            ++i;
-        } else {
-            result.push(ar2[j]);
-            ++j;
-        }
-
+const compare = ([h1,p1], [h2,p2]) => {
+    if(h1!== h2) {
+        return h2-h1;
     }
-    //return result;
+    return p1-p2;
 }
+
+function repositionArray(nums) {
+
+    nums.sort(compare);
+    
+    const finalArray = [][];
+    
+}
+
+
+
+
+
+repositionArray([[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]]);

@@ -46,4 +46,4 @@ return max_length
 
 }
 
-console.log(findLongestLengthString('aaaretrtrt'))
+console.log(findLongestLengthString('abcab'))

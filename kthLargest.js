@@ -67,7 +67,7 @@ class BinaryHeap {
         this.data[0] = this.data[this.data.length - 1];
         this.data.pop();
         if (this.type === 'MIN') {
-
+            // not implemented
         } else {
             this.bubbleDown(0);
         }
@@ -124,6 +124,6 @@ console.log(maxH.data);
 let k = 9;
 for(let i = 0; i<k-1; i++) {
     maxH.getMax();
-    console.log(maxH.data);
+    console.log(`--> ${maxH.data}`);
 }
 console.log(maxH.getMax());

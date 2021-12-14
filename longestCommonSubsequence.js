@@ -56,7 +56,7 @@
         return finalStr;
     }
 
-    if(dp[i][j-1]=== dp[i][j]){
+    if(dp[i][j-1] === dp[i][j]){
         return getLongestSubstring(dp, i, j-1, s1, finalStr);
     }else if(dp[i][j-1] > dp[i-1][j]) {
         return getLongestSubstring(dp, i, j-1, s1, finalStr);
@@ -71,4 +71,5 @@
 
 
 
- console.log(findLongestSubstring('stone','longest'));
+ // console.log(findLongestSubstring('stone','longest'));
+ console.log(findLongestSubstring('AGGTABB','GXTXAYB'));

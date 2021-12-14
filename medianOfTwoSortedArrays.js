@@ -38,7 +38,7 @@ function findMedian(arraya, arrayb) {
 
 }
 
-const a = [1,2]
+const a = [1,2,5]
 const b = [3,4]
 
 console.log(findMedian(a,b))

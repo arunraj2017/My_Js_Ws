@@ -38,7 +38,11 @@ Output: 701
 
 solution:
 just like decimal system is based on base 10, this is based on base 26
-
+eg:
+21 in decimal (base 10) =2x10 + 1
+555 = 0 x 10 + 5 = 5
+     5 * 10 + 5 = 55
+     55 * 10 + 5 = 555
 */
 
 const alphabets = {

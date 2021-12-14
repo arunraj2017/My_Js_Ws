@@ -9,7 +9,7 @@ save mins from both above
 subtract above from nums[i];
 */
 function countTotalWater(nums) {
-    if (nums == null && nums.length < 3) {
+    if (nums == null || nums.length < 3) {
       return 0;
     }
   
