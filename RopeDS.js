@@ -1,3 +1,7 @@
+
+/** 
+ * https://www.sanfoundry.com/java-program-implement-rope/
+*/
 class Node{
 
     constructor(data) {
